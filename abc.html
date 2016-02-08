@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body background="img.jpg">
+<head>
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>    
+  <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+</head>
+      <body>
+	<div class="row">
+  <div class="input-field col s12 m6">
+    <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="home.jpg" class="left circle">Residential</option>
+      <option value="" data-icon="smoke.jpg" class="left circle">Industrial</option>
+        </select>
+  
+  </div>
+  </div>
+</body>
+	      <!--Import jQuery before materialize.js-->
+    
+<input type=button value="Go" onclick="goToNewPage()" />
+</div>
+<div align="centre">
+ <p> <font color= "white" size="7"  >Select the Region</font> <p>
+ 	<div class="row">
+<select class="icons">
+  <option value=""data-icon="in.jpg" class="left circle">India</option>
+  <option value=""data-icon="us.jpg" class="left circle">USA</option>
+  <option value=""data-icon="cn.jpg" class="left circle">China</option>
+  <option value=""data-icon="gb.jpg" class="left circle">UK</option>
+  <option value=""data-icon="au.jpg" class="left circle">Austrailia</option>
+  <option value=""data-icon="fr.jpg" class="left circle">France</option>
+ </select> 
+<input type=button value="Go" onclick="goToNewPage()" />
+ </div>  
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+		<script>
+  $(document).ready(function() {
+    $('select').material_select();
+  });	
+	</script>
+</body>
+</html>
